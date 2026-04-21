@@ -4,8 +4,6 @@
 
 Provisioned a repeatable Azure virtual machine in minutes to validate hosting, security controls, VM health, lifecycle cleanup, and cloud cost governance.
 
----
-
 ## 🏗️ Environment Build Choices
 
 ### 🏷️ Name and Tags
@@ -57,8 +55,6 @@ Provisioned a repeatable Azure virtual machine in minutes to validate hosting, s
 - Left default unless workload required customization
 - Can later expand for identity, monitoring, scripts, shutdown automation
 
----
-
 ## 🚀 Deployment Steps
 
 - Launched Azure Ubuntu virtual machine
@@ -72,8 +68,6 @@ Provisioned a repeatable Azure virtual machine in minutes to validate hosting, s
 - Tested browser access via Public IP
 - Validated browser and CLI responses
 
----
-
 ## 💻 Commands Used
 
 - `chmod 400 az-lab-vm_key.pem` — Secure private key permissions
@@ -85,8 +79,6 @@ Provisioned a repeatable Azure virtual machine in minutes to validate hosting, s
 - `curl -I http://public-ip` — Validate HTTP response headers
 - `top` — View real-time CPU and memory utilization
 
----
-
 ## ✅ Validation
 
 - SSH login successful
@@ -94,8 +86,6 @@ Provisioned a repeatable Azure virtual machine in minutes to validate hosting, s
 - HTTP response returned
 - Browser page reachable
 - VM metrics visible in Azure portal
-
----
 
 ## 🧠 Lessons Learned
 
@@ -106,8 +96,6 @@ Provisioned a repeatable Azure virtual machine in minutes to validate hosting, s
 - Consistent naming improves management clarity
 - Temporary access rules should be removed after testing
 
----
-
 ## 🔮 Future Improvements
 
 - Terraform Azure VM deployment
@@ -117,8 +105,6 @@ Provisioned a repeatable Azure virtual machine in minutes to validate hosting, s
 - Azure Load Balancer front-end
 - Private subnet + Bastion host model
 - VM Scale Set testing
-
----
 
 ## 🧹 Final Hygiene Cleanup
 
