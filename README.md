@@ -1,6 +1,6 @@
 # ☁️ Cloud Infrastructure Deployments
 
-Hands-on cloud engineering notes focused on AWS, Azure, networking, monitoring, automation, validation, and operational cleanup.
+Hands-on cloud engineering notes covering AWS, Azure, networking, monitoring, automation, validation, and operational cleanup.
 
 ## About This Repo
 
