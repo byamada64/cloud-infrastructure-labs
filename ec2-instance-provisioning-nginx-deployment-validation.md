@@ -2,7 +2,7 @@
 
 ## 🎯 Objective
 
-Deploy an Ubuntu EC2 instance, install NGINX, validate external web access, verify instance health, and review lifecycle operations.
+Provisioned a repeatable Ubuntu EC2 lab in minutes to validate Linux web hosting, security controls, instance health, lifecycle cleanup, and cloud cost governance.
 
 ## 🏗️ Environment Build Choices
 
