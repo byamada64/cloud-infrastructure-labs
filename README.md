@@ -9,3 +9,5 @@ Hands-on cloud labs focused on AWS, Azure, Linux, networking, monitoring, automa
 
 - [Azure Builds](azure/)
   - [Azure VM + NGINX Deployment + Validation](azure/azure-vm-nginx-deployment-validation.md)
+
+## Purpose of This Repo: These are real-world build notes designed to accelerate learning and execution. They capture actual selections, deployment flow, validation steps, and lessons learned for users who already understand basic cloud concepts.
