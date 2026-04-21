@@ -7,8 +7,8 @@ Provisioned a managed Azure Web App using App Service to validate PaaS hosting, 
 
 ### Project Details
 
-- **Subscription:** azurekmlprod  
-- **Resource Group:** kml_rg_main-9eafd04f543b47e5  
+- **Subscription:** Existing assigned lab subscription provided by organization  
+- **Resource Group:** Existing approved Resource Group provided by lab environment
 
 ### Instance Details
 
