@@ -1,2 +1,2 @@
 # cloud-infrastructure-labs
-Hands-on AWS, Azure, Linux, networking, monitoring, and automation labs focused on real-world troubleshooting, practical engineering scenarios, and scalable design.
+Cloud infrastructure labs focused on AWS, Azure, Linux, networking, monitoring, and automation—built to showcase real-world troubleshooting, repeatable deployments, operational excellence, and cloud cost governance.
