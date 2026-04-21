@@ -87,7 +87,11 @@ Use a VM when hosting applications or services—not for storing credentials.
 - TLS certificate management  
 - Encryption keys for storage workloads  
 - Break-glass administrator credentials  
-- Shared enterprise app secrets  
+- Shared enterprise app secrets
+- VMware certificate storage
+- Fleet Server enrollment tokens
+- Palo Alto / Panorama API credentials
+- Backup platform service accounts
 
 
 ## 7️⃣ Related builds
