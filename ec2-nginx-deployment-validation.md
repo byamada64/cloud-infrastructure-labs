@@ -2,7 +2,7 @@
 
 ## 🎯 Objective
 
-Deploy an Ubuntu EC2 instance, install NGINX, validate external web access, and review monitoring and lifecycle operations.
+Deploy an Ubuntu EC2 instance, install NGINX, validate external web access, verify instance health/status, and review lifecycle operations.
 
 ## 🏗️ Environment Build Choices
 
