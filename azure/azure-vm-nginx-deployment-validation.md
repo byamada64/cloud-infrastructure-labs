@@ -1,281 +1,146 @@
-# ☁️ Azure VM + NGINX Deployment + Validation + Cleanup
+# ☁️ Azure VM Provisioning + NGINX Deployment + Validation
 
 ## 🎯 Objective
 
-Provisioned a repeatable Azure Ubuntu virtual machine in minutes to validate lightweight Linux hosting, security controls, web access, lifecycle cleanup, and cloud cost governance.
+Provisioned a repeatable Azure virtual machine in minutes to validate hosting, security controls, VM health, lifecycle cleanup, and cloud cost governance.
 
 ---
 
-# 🏗️ Environment Build Choices
+## 🏗️ Environment Build Choices
 
-## 🖥️ Virtual Machine
-
-- Selected **Create > Virtual Machine**
-
-- Chose Ubuntu Server image
-
-- Standard VM size for lab testing
-
-- Used public IP for temporary internet validation
-
----
-
-# ⚙️ Build Configuration
-
-## 📘 Basics
-
-### 📁 Project Details
-
-- Selected active subscription
-
-- Created / selected Resource Group
-
-### 💻 Instance Details
+### 🏷️ Name and Tags
 
 - VM Name: `az-lab-vm`
+- Use consistent naming convention for tracking, automation, and scale.
 
-- Region: East US
+### 💿 Operating System / Image
 
-- Availability Zone: Default
+- Ubuntu Server 24.04 LTS
+- Gen2 image
+- Standard SSD supported
+- 64-bit architecture
 
-- Image: Ubuntu Server 24.04 LTS
+### ⚙️ Compute
 
-### 👤 Administrator Account
+- VM Size: `B1s`
+- Low-cost burstable compute for lab testing
 
+### 🔑 Access Method
+
+- Created new SSH key pair
 - Username: `azureuser`
+- Downloaded private `.pem` key
+- Stored securely after download
 
-- Authentication Type: SSH Public Key
+### 🌐 Networking
 
-- Generated new key pair
+- Virtual Network: New
+- Subnet: Default
+- Public IP enabled for remote access
+- Suitable for lab use; production may use private subnet model
 
-### 🌐 Inbound Port Rules
+### 🔥 Firewall
 
-- Allow selected ports:
+- Created dedicated Network Security Group
+- SSH (22) allowed
+- HTTP (80) allowed
+- Rules can later be restricted to source IP
 
-  - SSH (22)
+### 💾 Storage
 
-  - HTTP (80)
-
-> Public access used for lab testing only. Production environments may require private access or approval.
-
----
-
-## 💽 Disks
-
-- OS Disk: Default 30 GiB
-
-- Changed disk type from Premium to **Standard SSD**
-
+- Default 30GB OS disk
+- Changed Premium SSD to Standard SSD
 - Delete disk with VM enabled
 
-- Left advanced disk options as default
+### 🧩 Advanced Options
 
-> Standard SSD chosen for lower-cost lab usage.
-
----
-
-## 🌐 Networking
-
-- Created new Virtual Network
-
-- Created default subnet
-
-- Created Public IP
-
-- NSG Mode: Basic
-
-- Allowed inbound:
-
-  - SSH (22)
-
-  - HTTP (80)
-
-- Load Balancing: None
-
-> Azure Load Balancer / Application Gateway saved for separate labs.
+- Left default unless workload required customization
+- Can later expand for identity, monitoring, scripts, shutdown automation
 
 ---
 
-## 🛠️ Management
+## 🚀 Deployment Steps
 
-- Left defaults enabled
-
-- No custom identity or auto-shutdown changes
-
-> Use defaults unless special operational requirements exist.
-
----
-
-## 📈 Monitoring
-
-- Left default monitoring options
-
-- Boot diagnostics remained default
-
-> Additional monitoring can be enabled in future observability labs.
+- Launched Azure Ubuntu virtual machine
+- Validated VM state = Running
+- Captured Public IP address
+- Connected via SSH key pair
+- Updated packages
+- Installed NGINX
+- Enabled NGINX service
+- Started NGINX service
+- Tested browser access via Public IP
+- Validated browser and CLI responses
 
 ---
 
-## 🧪 Advanced
+## 💻 Commands Used
 
-- Left extensions / cloud-init defaults
-
-- No custom scripts added during build
-
-> Automation scripts can be added in future IaC / bootstrap labs.
-
----
-
-## 🏷️ Tags
-
-- Optional for lab
-
-- Useful examples:
-
-| Name | Value |
-
-|------|-------|
-
-| Environment | Lab |
-
-| Owner | Joe |
-
-| Purpose | Training |
-
-> Tags help inventory, reporting, and billing visibility.
+- `chmod 400 az-lab-vm_key.pem` — Secure private key permissions
+- `ssh -i az-lab-vm_key.pem azureuser@public-ip` — Connect to Azure VM using SSH key
+- `sudo apt update -y` — Refresh Ubuntu package repositories
+- `sudo apt install nginx -y` — Install NGINX web server
+- `sudo systemctl enable nginx` — Enable NGINX to start on boot
+- `sudo systemctl start nginx` — Start NGINX service immediately
+- `curl -I http://public-ip` — Validate HTTP response headers
+- `top` — View real-time CPU and memory utilization
 
 ---
 
-## ✅ Review + Create
-
-- Selected **Review + Create**
-
-- Validation Passed
-
-- Reviewed final configuration
-
-- Selected **Create**
-
----
-
-## 🔐 SSH Key Download
-
-Popup appeared after create:
-
-- Selected **Download private key and create resource**
-
-- Saved `.pem` file locally
-
-- Stored securely for SSH access
-
-> Azure does not store the private key again.
-
----
-
-# 🚀 Deployment Steps
-
-1. Created Azure Ubuntu virtual machine
-
-2. Downloaded SSH private key
-
-3. Waited for deployment success
-
-4. Captured Public IP address
-
-5. Connected through SSH
-
-6. Updated packages
-
-7. Installed NGINX
-
-8. Enabled NGINX service
-
-9. Started NGINX service
-
-10. Tested browser + CLI access
-
----
-
-# 💻 Commands Used
-
-- `chmod 400 az-lab-vm_key.pem`
-
-- `ssh -i az-lab-vm_key.pem azureuser@public-ip`
-
-- `sudo apt update -y`
-
-- `sudo apt install nginx -y`
-
-- `sudo systemctl enable nginx`
-
-- `sudo systemctl start nginx`
-
-- `curl -I http://public-ip`
-
-- `top`
-
----
-
-# ✅ Validation
+## ✅ Validation
 
 - SSH login successful
-
 - NGINX service active
-
 - HTTP response returned
-
 - Browser page reachable
-
-- VM status visible in Azure portal
+- VM metrics visible in Azure portal
 
 ---
 
-# 🧠 Lessons Learned
+## 🧠 Lessons Learned
 
 - NSG rules control inbound traffic
-
-- Public IP required for direct testing
-
-- Standard SSD is fine for labs
-
-- Small VM sizes work for lightweight hosting
-
-- Tags improve resource visibility
-
-- Temporary access rules should be removed after use
+- Public IP required for direct internet access
+- Small VM sizes are sufficient for lightweight hosting
+- Standard SSD is ideal for low-cost labs
+- Consistent naming improves management clarity
+- Temporary access rules should be removed after testing
 
 ---
 
-# 🧹 Final Hygiene Cleanup
+## 🔮 Future Improvements
 
-1. Stopped virtual machine
+- Terraform Azure VM deployment
+- Ansible NGINX install automation
+- Azure Monitor alerts
+- HTTPS with Let’s Encrypt
+- Azure Load Balancer front-end
+- Private subnet + Bastion host model
+- VM Scale Set testing
 
-2. Selected Delete VM
+---
 
-3. Confirmed deletion
+## 🧹 Final Hygiene Cleanup
 
-4. Opened Resource Manager / All Resources
+### Cleanup Actions
 
-5. Attempted Resource Group deletion
-
-6. Deleted leftover resources manually
+- Stopped virtual machine
+- Selected **Delete VM**
+- Confirmed deletion
+- Opened **Resource Manager / All Resources**
+- Attempted full Resource Group deletion
+- Deleted leftover resources manually when needed
 
 ### Removed Assets
 
 - Public IP
-
 - Network Security Group
-
 - Virtual Network
-
 - Network Interface
-
 - SSH Key Resource
 
 ### Final Validation
 
 - Confirmed no remaining billable assets
-
 - Prevented future charges
-
-- Environment returned clean
+- Returned environment to a clean state
