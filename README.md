@@ -19,14 +19,16 @@ Designed for engineers, recruiters, and hiring managers who want real-world exam
 
 ## Platforms
 
-- AWS Builds
-- Azure Builds
-- Service Guides
+## Platforms
 
 - [AWS Builds](aws/)
-  - [EC2 Instance + NGINX Deployment + Validation](aws/ec2-instance-nginx-deployment-validation.md)
+  - [EC2 Instance + NGINX Deployment + Validation](aws/ec2-deployment.md)
 
 - [Azure Builds](azure/)
-  - [Azure VM + NGINX Deployment + Validation](azure/azure-vm-nginx-deployment-validation.md)
+  - [Azure VM + NGINX Deployment + Validation](azure/vm-deployment.md)
+  - [Azure App Service Deployment](azure/app-service-deployment.md)
+
+- [Service Guides](services/)
+  - [Azure App Service](services/app-service.md)
  
 
