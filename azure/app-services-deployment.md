@@ -50,6 +50,7 @@ Provisioned a managed Azure Web App using App Service to validate PaaS hosting, 
 
 - None assigned during build
 
+
 ## 💻 Commands Used
 
 - `chmod 400 az-lab-vm_key.pem` — Secure private key permissions  
