@@ -66,6 +66,7 @@ Provisioned and validated an Azure Key Vault to demonstrate secure credential st
 - Resource accessible from portal
 - Secret created: vm-admin-password (mock-up)
 - Secret created: sql-prod-admin-password (mock-up)
+- Secret created: servicenow-api-token (mock-up)
 
 ## 🧠 Lessons Learned
 
