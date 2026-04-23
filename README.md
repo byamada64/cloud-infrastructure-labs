@@ -4,7 +4,7 @@ Hands-on cloud engineering notes covering AWS, Azure, networking, monitoring, au
 
 ## Lab Scope Note
 
-- These builds were intentionally scoped for sandbox and testing purposes. Many of the same core concepts and deployment patterns can be applied in production environments, with final designs tailored to business requirements, security standards, scalability needs, and organizational governance.
+- These builds were intentionally scoped for sandbox and testing purposes. Core concepts and deployment patterns can be applied in production environments, with final designs tailored to business requirements, security controls, scalability needs, and organizational governance.
 
 ## About This Repo
 
