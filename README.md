@@ -42,7 +42,6 @@ Designed for engineers, recruiters, and hiring managers who want real-world exam
 - [Terraform VM + Storage Deployment](./azure/terraform-vm-storage-deployment.md)
 - [Azure VM + Storage + Private Endpoint Deployment](./azure/vm-storage-private-endpoint.md)
 
----
 
 ## 🔁 CI/CD Builds
 
