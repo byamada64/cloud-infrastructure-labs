@@ -1,4 +1,4 @@
-# ☁️ Cloud Engineering Repository | Deployments, Automation & Services
+# ☁️ Cloud Infrastructure Deployments | AWS, Azure & Automation
 
 Hands-on cloud engineering notes covering AWS, Azure, networking, monitoring, automation, validation, security, and operational cleanup.
 
