@@ -12,7 +12,6 @@
 
 ## 📄 YAML File Used
 
----
 - name: Install and Deploy Web Server
   hosts: webservers
   become: yes
