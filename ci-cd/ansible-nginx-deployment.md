@@ -10,6 +10,34 @@
 - Web Service: NGINX
 - Purpose: Automate multi-server web deployment using Ansible playbooks
 
+## 📄 YAML File Used
+
+---
+- name: Install and Deploy Web Server
+  hosts: webservers
+  become: yes
+
+  tasks:
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Start nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Deploy homepage
+      copy:
+        dest: /var/www/html/index.html
+        content: |
+          <h1>Ansible Deployment Success</h1>
+          <p>Server: {{ inventory_hostname }}</p>
+  
+
 ## 💻 Commands Used
 
 - `mkdir -p ~/ansible-lab`
