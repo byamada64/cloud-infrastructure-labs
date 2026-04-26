@@ -2,7 +2,6 @@
 
 Hands-on Azure networking build focused on segmented virtual networking, subnet-level security, inbound firewall controls, route table preparation, and VPN Gateway deployment.
 
----
 
 ## 🎯 Objective
 
@@ -10,7 +9,7 @@ Design and deploy an Azure network foundation using a segmented virtual network,
 
 This build demonstrates core Azure networking concepts used in enterprise environments including network segmentation, access control, gateway dependencies, and post-build validation.
 
----
+
 
 ## 🏗️ Environment Build Choices
 
@@ -62,7 +61,7 @@ Azure sandbox policy required specific VPN Gateway settings:
 - Generation: `Generation1`
 - VPN Type: `RouteBased`
 
----
+
 
 ## 💻 Commands Used
 
@@ -92,7 +91,6 @@ No CLI tools were used during this deployment.
 
 Azure deployment details were reviewed from the Azure Resource Manager deployment page.
 
----
 
 ## 🔐 Inbound Firewall Rules Applied
 
@@ -133,7 +131,7 @@ Typical inbound rules added:
 - Database ports from approved application subnet only
 - No broad internet-facing access
 
----
+
 
 ## 🔗 NSG Association to Subnets
 
@@ -176,7 +174,6 @@ Reviewed:
 
 The Azure VPN Gateway completed deployment successfully and was visible in the portal with metrics available.
 
----
 
 ## 🧯 Lessons Learned
 
@@ -206,8 +203,6 @@ Temporary retriable errors were also encountered while Azure networking resource
 - `/27` is a strong subnet size for gateway deployments.
 - Network Watcher is useful for post-build validation.
 
----
-
 ## 🚀 Future Improvements
 
 - Add Application Gateway
@@ -217,8 +212,6 @@ Temporary retriable errors were also encountered while Azure networking resource
 - Add Azure Firewall
 - Convert build to Terraform
 - Convert build to Ansible
-
----
 
 ## 🧹 Final Hygiene Cleanup
 
