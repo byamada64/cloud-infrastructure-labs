@@ -1,6 +1,6 @@
 # Azure Platform Builds
 
-Infrastructure, platform, networking, and security implementations across Azure environments aligned to production design, operational control, and governance.
+Infrastructure, app-platform, compute, containers, network, and security implementations across Azure environments aligned to production design, operational control, and governance.
 
 ## Purpose
 
