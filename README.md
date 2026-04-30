@@ -77,20 +77,23 @@ Designed for engineers, recruiters, and hiring managers evaluating real-world cl
 
 ## 🛠️ Skills Demonstrated
 
-- AWS & Azure Cloud Platforms
-- Infrastructure Provisioning
-- Linux Administration
-- Web Hosting Deployments
-- IAM / Secrets Management
-- Networking & Security Concepts
-- CI/CD Automation
-- Jenkins Pipelines
-- Ansible Automation
-- Git Workflows
-- Monitoring Validation
-- Operational Health Checks
-- Documentation & Runbooks
-- Troubleshooting
+**Cloud Platforms**
+- AWS, Azure
+
+**Infrastructure & Networking**
+- Compute provisioning, VMs, storage, private connectivity, network security
+
+**Security & Access Control**
+- IAM, RBAC, Secrets Management, Key Vault, KMS
+
+**Automation & CI/CD**
+- Jenkins, Ansible, Terraform, Infrastructure as Code
+
+**Systems & Operations**
+- Linux administration, service validation, monitoring, health checks
+
+**Engineering Practices**
+- Troubleshooting, runbooks, repeatable builds, operational validation
 
 
 ## 🎯 Current Focus
