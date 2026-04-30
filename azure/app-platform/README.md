@@ -4,10 +4,10 @@ PaaS services including App Service and platform workloads.
 
 ## Purpose
 
-- **Design:** Designed to simulate a production-aligned architecture, emphasizing service selection, scalability, and operational impact.
+- **Design:** Designed to simulate production-aligned architectures across platform services, focusing on service selection, scalability, and operational impact.
 
-- **Security:** Reviewed baseline security posture and identified gaps between default configurations and production requirements.
+- **Security:** Evaluated baseline security considerations including access control, network exposure, and identity integration, with awareness of production hardening requirements.
 
-- **Validation:** Confirmed deployment integrity, service availability, and end-to-end connectivity.
+- **Validation:** Validated deployments through service functionality, connectivity, and expected operational behavior.
 
-- **Limitations:** Performed within a restricted lab environment with limited access to enterprise networking, security, and automation capabilities.
+- **Limitations:** Executed within a governed lab environment with constraints on advanced networking, security integrations, and enterprise-scale configurations.
