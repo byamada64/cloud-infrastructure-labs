@@ -1,5 +1,11 @@
 # 🚀 Ansible NGINX Deployment
 
+## Build Summary
+
+Created an Ansible NGINX deployment workflow to evaluate automated web server installation, service enablement, and configuration consistency in a production-aligned scenario.
+
+This build focuses on deployment automation tradeoffs versus manual server configuration, incorporating Ansible playbooks, inventory targeting, package installation, NGINX service management, and web service validation within a governed lab environment.
+
 ## 🏗️ Environment Build Choices
 
 - Platform: KodeKloud Ansible Sandbox Lab
