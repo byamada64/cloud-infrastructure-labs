@@ -1,7 +1,10 @@
 # 🔐 Azure Key Vault Deployment
 
-Provisioned and validated an Azure Key Vault to demonstrate secure credential storage, RBAC access control, secret lifecycle management, and enterprise cloud governance.
+## Build Summary
 
+Provisioned an Azure Key Vault to evaluate secure secret storage, identity-based access control, and credential lifecycle management in a production-aligned scenario.
+
+This build focuses on security and governance tradeoffs versus hardcoded or externally managed secrets, incorporating RBAC, Managed Identity, access policies, and secret versioning to validate secure access patterns, auditability, and operational control within a governed environment.
 
 ## 🏗️ Environment Build Choices
 
