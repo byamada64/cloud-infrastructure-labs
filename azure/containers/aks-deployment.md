@@ -1,7 +1,10 @@
 # ☸️ Azure Kubernetes Service (AKS) Deployment
 
-Provisioned and validated an Azure Kubernetes Service (AKS) cluster to demonstrate managed Kubernetes operations, containerized workload deployment, public load balancing, rolling updates, horizontal scaling, and cloud-native troubleshooting within a governed Azure sandbox environment.
+## Build Summary
 
+Provisioned an Azure Kubernetes Service (AKS) cluster to evaluate managed container orchestration, workload deployment, and scaling behavior in a production-aligned scenario.
+
+This build focuses on container platform tradeoffs versus VM-based and PaaS deployments, incorporating RBAC, node pool scaling, load balancing, networking (VNet), and monitoring (Azure Monitor / Application Insights) to validate operational control, resilience, and service exposure within a governed lab environment.
 
 # 🏗️ Environment Build Choices
 
