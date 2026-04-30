@@ -4,7 +4,7 @@
 
 Provisioned a managed Azure Web App using App Service to evaluate PaaS hosting, deployment workflows, and runtime behavior in a production-aligned scenario.
 
-This build validates platform service tradeoffs versus VM-based deployments, with focus on scalability, cost control, and integration boundaries within a restricted lab environment.
+This build validates platform service tradeoffs versus VM-based deployments, with focus on scalability, cost control, and integration boundaries within a governed lab environment.
 
 
 ## 🏗️ Environment Build Choices
