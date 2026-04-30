@@ -49,7 +49,7 @@ Designed for engineers, recruiters, and hiring managers evaluating real-world cl
 
 ## 🔁 CI/CD Builds
 
-- [Jenkins Freestyle and Multibranch Guide](./ci-cd/Jenkins/jenkins-freestyle-and-multibranch-guide.md)
+- [Jenkins Freestyle and Multibranch Guide](./ci-cd/jenkins/jenkins-freestyle-and-multibranch-guide.md)
 - [Ansible NGINX Deployment](./ci-cd/ansible/ansible-nginx-deployment.md)
 - [Ansible Linux Baseline Configuration](./ci-cd/ansible/ansible-linux-baseline.md)
 - [Ansible Linux Health Audit](./ci-cd/ansible/ansible-health-audit.md)
