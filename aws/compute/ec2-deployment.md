@@ -4,7 +4,7 @@
 
 Provisioned an Amazon EC2 instance to evaluate infrastructure-based compute deployment, OS-level control, and secure remote access in a production-aligned scenario.
 
-This build focuses on EC2 tradeoffs versus platform-managed services, incorporating AMI selection, security groups, SSH access, instance sizing, and public exposure controls to validate connectivity, security boundaries, and operational control.
+This build focuses on EC2 tradeoffs versus platform-managed services, incorporating AMI selection, security groups, SSH access, instance sizing, and public exposure controls to validate connectivity, security boundaries, and governed lab environment.
 
 ## 🏗️ Environment Build Choices
 
