@@ -6,8 +6,6 @@ This architecture pattern combines Azure Virtual Machines, Storage Accounts, Con
 
 It is commonly used when organizations need controlled, private connectivity between services, trading public accessibility for enhanced security, network isolation, and governance-aligned access patterns.
 
-This service guide aligns with the related build:
-
 
 ## 1️⃣ What it is
 
