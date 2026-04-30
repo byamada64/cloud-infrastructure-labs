@@ -1,30 +1,34 @@
-# ☁️ Cloud Infrastructure Deployments | AWS, Azure & Automation
+# ☁️ Cloud Infrastructure & Platform Engineering | AWS, Azure, CI/CD
 
-Hands-on cloud infrastructure builds, automation workflows, architecture references, and deployment guides across AWS, Azure, and CI/CD platforms.
+Hands-on cloud infrastructure and platform engineering builds across AWS, Azure, and CI/CD tooling.
 
-## 📌 Lab Scope Note
+This repository demonstrates real-world provisioning, automation, and operational validation using repeatable deployment patterns rather than UI-driven workflows.
 
-These guides prioritize build concepts and deployment flow over screenshots, since cloud interfaces evolve frequently while core engineering principles and deployment patterns remain consistent.
+## 📌 Lab Scope
 
-Structured headings are intentionally used to serve as a follow-along framework, helping readers navigate each phase of a build while adapting steps to their own environment.
+These builds focus on core deployment patterns and operational workflows rather than screenshots, since cloud interfaces change frequently while engineering principles remain consistent.
+
+Structured headings are used as a repeatable framework to guide build, validation, and cleanup phases.
 
 
 ## 📖 About This Repo
 
-This repository contains two types of practical cloud engineering content:
+This repository is organized into two complementary areas:
 
-- **Deployments** → Step-by-step build notes showing how resources were provisioned, configured, validated, and cleaned up.
-- **Services** → Quick-reference guides explaining what cloud services do, why companies use them, and when to choose them.
+- **Deployments** → Hands-on builds showing how infrastructure is provisioned, configured, validated, and cleaned up  
+- **Services** → Reference guides explaining service capabilities, tradeoffs, and when to use one solution over another  
 
-Designed for engineers, recruiters, and hiring managers who want real-world examples of both execution and platform understanding.
+The goal is to demonstrate both **execution (hands-on engineering)** and **decision-making (architecture awareness)** across cloud platforms.
+
+Designed for engineers, recruiters, and hiring managers evaluating real-world cloud and automation experience.
 
 
 ## 🗂️ Repository Layout
 
-- [`aws/`](./aws/) → AWS builds organized by compute, network, security, containers, and app platforms
-- [`azure/`](./azure/) → Azure builds organized by compute, network, security, containers, and app platforms
-- [`ci-cd/`](./ci-cd/) → Automation content including Jenkins, Ansible, and Terraform
-- [`services/`](./services/) → Service explainers organized by AWS, Azure, and CI/CD tooling
+- **aws/** → AWS builds (compute, networking, security, containers, app platforms)  
+- **azure/** → Azure builds (compute, networking, security, containers, app platforms)  
+- **ci-cd/** → Automation workflows (Jenkins, Ansible, Terraform)  
+- **services/** → Service reference guides (AWS, Azure, CI/CD tools)
 
 
 ## ☁️ AWS Builds
