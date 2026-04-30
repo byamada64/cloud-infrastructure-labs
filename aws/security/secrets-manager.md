@@ -4,7 +4,7 @@
 
 Provisioned AWS Secrets Manager to evaluate secure credential storage, encryption, and centralized secret lifecycle management in a production-aligned scenario.
 
-This build focuses on identity-driven access patterns versus hardcoded credentials, incorporating IAM policies, KMS-backed encryption, and secret versioning to validate secure access control, auditability, and operational governance.
+This build focuses on identity-driven access patterns versus hardcoded credentials, incorporating IAM policies, KMS-backed encryption, and secret versioning to validate secure access control, auditability, and governed lab environment.
 
 ## 🏗️ Environment Build Choices
 
