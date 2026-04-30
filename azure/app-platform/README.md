@@ -1,10 +1,10 @@
-# Azure App Platform Builds
+Azure App Platform Builds
 
 PaaS services including App Service and platform workloads.
 
 ## Purpose
 
-- **Design:** Designed to simulate production-aligned architectures across platform services, focusing on service selection, scalability, and operational impact.
+- **Design:** Designed to simulate production-aligned platform architectures, focusing on service selection, scalability, and operational impact.
 
 - **Security:** Evaluated baseline security considerations including access control, network exposure, and identity integration, with awareness of production hardening requirements.
 
