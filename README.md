@@ -99,9 +99,7 @@ Designed for engineers, recruiters, and hiring managers evaluating real-world cl
 ## 🎯 Current Focus
 
 - Azure Kubernetes Service (AKS)
-- Terraform
-- Infrastructure as Code
-- Cloud Monitoring
+- Terraform & Infrastructure as Code
+- Cloud Monitoring & Observability
 - Multi-cloud Operations
-- CI/CD Automation
-- Platform Engineering
+- CI/CD & Platform Engineering
