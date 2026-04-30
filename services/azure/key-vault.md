@@ -1,7 +1,10 @@
 # 🎫 Azure Key Vault
 
-Practical guide for understanding Azure Key Vault, why companies use it, and when to choose it for secure credential and secret management.
+## Service Summary
 
+Azure Key Vault is a managed security service that provides centralized storage, encryption, and lifecycle management for secrets, keys, and certificates.
+
+It is commonly used when organizations want to eliminate hardcoded credentials and enforce secure access patterns, trading manual secret handling for identity-based access control, auditability, and integration with cloud-native services.
 
 ## 1️⃣ What it is
 
