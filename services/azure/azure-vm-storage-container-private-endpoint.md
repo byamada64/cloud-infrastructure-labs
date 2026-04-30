@@ -1,10 +1,12 @@
 # ☁️ Azure VM + Storage + Container + Private Endpoint
 
-Practical guide for understanding how Azure compute, storage, containers, and private networking work together in a multi-service cloud environment.
+## Service Summary
+
+This architecture pattern combines Azure Virtual Machines, Storage Accounts, Container Instances, and Private Endpoints to enable secure service communication within isolated network boundaries.
+
+It is commonly used when organizations need controlled, private connectivity between services, trading public accessibility for enhanced security, network isolation, and governance-aligned access patterns.
 
 This service guide aligns with the related build:
-
-- `azure/vm-storage-private-endpoint.md`
 
 
 ## 1️⃣ What it is
