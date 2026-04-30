@@ -1,3 +1,13 @@
 # AWS Services
 
-Reference guides covering core AWS services, cloud architecture, and operational use cases.
+Reference guides covering AWS service capabilities, business use cases, operational tradeoffs, and when to choose one service over another.
+
+## Purpose
+
+- Service Overview: Explain what each service is and where it fits within cloud architecture.
+
+- Business Value: Identify why companies use the service and what operational problems it helps solve.
+
+- Decision Criteria: Compare when to use the service versus alternatives based on control, scalability, cost, and operational overhead.
+
+- Use Cases: Capture real-world scenarios where the service is commonly applied in production environments.
