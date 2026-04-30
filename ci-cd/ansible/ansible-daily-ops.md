@@ -1,5 +1,11 @@
 # 🛠️ Ansible Daily Linux Operations Check
 
+## Build Summary
+
+Created an Ansible daily operations check to evaluate repeatable Linux service validation, system health review, and operational consistency in a production-aligned scenario.
+
+This build focuses on automation tradeoffs versus manual server checks, incorporating Ansible inventory, YAML playbooks, SSH-based execution, NGINX service validation, disk and memory checks, and failed service review within a governed lab environment.
+
 ## 🏗️ Environment Build Choices
 
 - Platform: KodeKloud Ansible Sandbox Lab
